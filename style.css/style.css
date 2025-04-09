@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* buscar fonte inter no google fontes */
 
 /* HEADER */
 .header {
     width: 100vw;
-    height: 136px;
+    height: 20vh;
+    /*136px;*/
     background-color: #E5F4Ff;
     display: flex;
     justify-content: center;
@@ -18,34 +19,86 @@
     font-size: 48px;
     text-align: center;
 }
-.header__title--blue{
-color: #1298F8;
+
+.header__title--blue {
+    color: #1298F8;
 }
+
+/* MAIN */
+main {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../imagens/pizzaBackground.png );
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 468px;
+    height: 264px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0px 4px 4px 0px black;
+    border-radius: 25px;
+    background-color: #E5F4Ff;
+    position: relative;
+    left: 100px;
+
+}
+
+.form__input {
+    width: 280px;
+    height: 24px;
+}
+
+.form__btn {
+    border-radius: 20px;
+    padding: 16px 32px 16px 32px;
+    background-color: #399ADE;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 4px 0px black;
+}
+
+.form__btn--action {
+    background-color: #48D05F;
+}
+
+
 
 /* FOOTER */
-.footer{
-width: 100vw;
-height: 115px;
-background-color: #E5F4Ff;
-display: flex;
-gap: 192px;
-justify-content: center;
-align-items: center;
+.footer {
+    width: 100vw;
+    height: 20vh;
+    /* 115px;*/
+    background-color: #E5F4Ff;
+    display: flex;
+    gap: 192px;
+    justify-content: center;
+    align-items: center;
 
 }
-.footer__columns{
+
+.footer__columns {
     width: 16%;
     text-align: center;
 }
 
-.footer__social-media{
+.footer__social-media {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.footer__social-icon{
-text-decoration: none;
-color: black ;
-font-size: 24px;
+.footer__social-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
 }

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* buscar fonte inter no google fontes */
 :root{
-     --cor-primaria:#E5F4Ff;
-     --cor-secundaria:#1298F8;
+     --cor-primaria:#ffeeb7;
+     --cor-secundaria:#ffbebe;
      --cor-action:#48D05F;
 }
 
@@ -28,7 +29,8 @@
 }
 
 .header__title--blue {
-    color:var(cor-secundaria);
+ color:#d4a464;
+ font-family:Italiana, sans-serif ;
 }
 
 /* MAIN */
@@ -109,7 +111,7 @@ border: 2px solid
 .footer__social-media {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    
 }
 
 .footer__social-icon {

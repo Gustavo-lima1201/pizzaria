@@ -19,6 +19,12 @@
     justify-content: center;
     align-items: center;
 }
+.header__img{
+    height: 191px;
+    width: 220px;
+    position: relative;
+    right: 400px;
+}
 
 .header__title {
     font-weight: bold;
@@ -26,6 +32,8 @@
     font-family: Inter, sans-serif;
     font-size: 48px;
     text-align: center;
+    justify-content: center;
+    
 }
 
 .header__title--blue {

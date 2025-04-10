@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* buscar fonte inter no google fontes */
+:root{
+     --cor-primaria:#E5F4Ff;
+     --cor-secundaria:#1298F8;
+     --cor-action:#48D05F;
+}
+
+
 
 /* HEADER */
 .header {
     width: 100vw;
     height: 20vh;
     /*136px;*/
-    background-color: #E5F4Ff;
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +28,7 @@
 }
 
 .header__title--blue {
-    color: #1298F8;
+    color:var(cor-secundaria);
 }
 
 /* MAIN */
@@ -32,7 +39,7 @@ main {
     background-image: url(../imagens/pizzaBackground.png );
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 
 
 }
@@ -44,10 +51,10 @@ main {
     height: 264px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    /* gap: 16px; */
     box-shadow: 0px 4px 4px 0px black;
     border-radius: 25px;
-    background-color: #E5F4Ff;
+    background-color: var(--cor-primaria);
     position: relative;
     left: 100px;
 
@@ -67,18 +74,25 @@ main {
     box-shadow: 0px 4px 4px 0px black;
 }
 
-.form__btn--action {
-    background-color: #48D05F;
+.form__btn:hover {
+
+background-color: #e3f59d;
+/* background-color: rgba(252, 1, 1,0.75) */
+color: #000;
+border: 2px solid 
 }
 
 
+.form__btn--action {
+    background-color:var(--cor-action);
+}
 
 /* FOOTER */
 .footer {
     width: 100vw;
     height: 20vh;
     /* 115px;*/
-    background-color: #E5F4Ff;
+    background-color: var(--cor-primaria);
     display: flex;
     gap: 192px;
     justify-content: center;
@@ -89,6 +103,7 @@ main {
 .footer__columns {
     width: 16%;
     text-align: center;
+    line-height: 22px;
 }
 
 .footer__social-media {
